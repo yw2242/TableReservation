@@ -45,7 +45,7 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/make_reservation", function(req, res) {
+app.get("/make_reservations", function(req, res) {
   res.sendFile(path.join(__dirname, "make.html"));
 });
 
@@ -62,12 +62,13 @@ app.post("/view_tables", function(req, res) {
 
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  newTable.uniqueId = newTable.name.replace(/\s+/g, "").toLowerCase();
+  // newTable.uniqueId = newTable.name.replace(/\s+/g, "").toLowerCase();
 
-  console.log(newTable);
+  // console.log(newTable);
 
   reservervations.push(newTable);
 
+  console.log(reservations);
   res.sendFile(path.join(__dirname, "view.html"));
 });
 
