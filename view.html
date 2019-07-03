@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Our Restaraunt</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class= "container"> 
+    <div class="jumbotron">
+        <h1 class="text-center">View Reservations</h1>
+        <hr>
+        <div class="row justify-content-center">
+            <a href="/">
+                <button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span>Home</button>
+            </a>
+            <a href="/make_reservations">
+                <button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span>Make Reservation</button>
+            </a>
+        </div>
+    </div>
+<!-- This is where the reservation data (unique id) is displayed -->
+    <div class="col-12">
+        <div class="row-md-4"
+            <div class="card">
+                <div class="card-header">
+                  <h3><strong>Reservations</strong></h3>
+                </div>
+
+                <div class="card-body">
+                  <!-- Here are the ids to append the data to -->  
+                  <div id="stats">
+                    <span id="name"></span>
+                    <span id="unique_id"></span>
+                  </div>
+                </div>
+              </div>
+            </div>  
+    </div>
+</div>
+
+</body>
+</html>
